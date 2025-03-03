@@ -1,28 +1,31 @@
 <!doctype html>
-<html class="no-js" lang="">
+<html class="js" lang="ru">
 
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Отзывы о продуктах</title>
   <link rel="stylesheet" href="css/style.css">
-  <meta name="description" content="">
+  <meta name="description" content="Страница для добавления и просмотра отзывов">
   <link rel="icon" href="/favicon.ico" sizes="any">
   <link rel="icon" href="/icon.svg" type="image/svg+xml">
   <link rel="apple-touch-icon" href="icon.png">
   <link rel="manifest" href="site.webmanifest">
   <meta name="theme-color" content="#fafafa">
+
 </head>
 
 <body>
-<h1>Добавить отзыв</h1>
-<input type="text" id="productName" placeholder="Название продукта"><br><br>
-<textarea id="reviewText" placeholder="Ваш отзыв"></textarea><br><br>
-<button onclick="addReview()">Добавить отзыв</button>
 
-<h1>Просмотр отзывов</h1>
-<ul id="productList"></ul>
+<div class="container">
+  <h1>Добавить отзыв о продукте</h1>
+  <input type="text" id="productName" placeholder="Название продукта" required>
+  <textarea id="reviewText" placeholder="Ваш отзыв" required></textarea>
+  <button id="addReview">Добавить отзыв</button>
 
-
+  <h2>Отзывы о продуктах</h2>
+  <div id="reviewsList"></div>
+</div>
+<script src="js/app.js"></script>
 </body>
 </html>
